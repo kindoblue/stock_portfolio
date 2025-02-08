@@ -20,9 +20,7 @@ A desktop application built with PySide6 for managing your stock portfolio. This
 - Python 3.10 or higher
 - uv (recommended) or pip
 
-## Installation
-
-### Using uv (Recommended)
+## Quick Start
 
 1. Install uv:
 
@@ -40,40 +38,34 @@ On macOS/Linux:
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-2. Create and activate a new virtual environment:
+2. Run the application:
+```bash
+uv run main.py
+```
+
+That's it! uv will automatically create a virtual environment and install all required dependencies.
+
+## Development Setup
+
+If you want to develop or modify the application, you'll need to set up a development environment:
+
+1. Create and activate a virtual environment:
 ```bash
 uv venv
 source .venv/bin/activate  # On macOS/Linux
 .venv\Scripts\activate     # On Windows
 ```
 
-3. Install dependencies using uv:
+2. Install the package in editable mode:
 ```bash
 uv pip install -e .
 ```
 
-### Using pip (Alternative)
-
-If you prefer using pip:
-```bash
-python -m venv .venv
-source .venv/bin/activate  # On macOS/Linux
-.venv\Scripts\activate     # On Windows
-pip install -e .
-```
-
-## Running the Application
-
-After installation, you can run the application in one of two ways:
-
-### Using uv:
-```bash
-uv python main.py
-```
-
-### Using regular Python:
+3. You can now run the application using either:
 ```bash
 python main.py
+# or
+uv python main.py
 ```
 
 ## Usage

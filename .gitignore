@@ -7,6 +7,11 @@ ENV/
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+**/*.pyc
+**/__pycache__/
+**/__pycache__/*.pyc
+**/*.cpython-*.pyc
 
 # Distribution / packaging
 dist/

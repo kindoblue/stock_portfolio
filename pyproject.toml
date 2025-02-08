@@ -1,0 +1,17 @@
+[project]
+name = "portfolio"
+version = "0.1.0"
+description = "Stock portfolio manager with SQLite database storage"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyside6>=6.8.2.1",
+    "yfinance>=0.2.52",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["utils", "dialogs"]
